@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/46c2414e13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Junior Back-end Developer</p>
+            <h1>Hi, I'm <span>Alfonda</span><br>Dimas From Indonesia</h1>
+        </div>
+    </div>
+</div>
+<!----------about----------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an enthusiastic back-end developer student currently pursuing my education at Faculty of Engineering University of Indonesia.
+                    My primary focus includes programming, Prototypes, Electrical Circuit, and information security.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                      </div>
+                <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                        <li><span>C++ Programming</span><br>Arduino IDE</li>
+                        <li><span>Electrical Circuits</span><br>Circuits Design</li>
+                        <li><span>Database</span><br>mySQL and MS SQL</li>
+                        <li><span>Routing & Switching</span><br>Cisco Packet Tracer</li>
+                        <li><span>Security</span><br>Experienced at Ubuntu Linux & Kali Linux</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                    <li><span>Cisco Networking Academy</span><br>Connecting Things</li>
+                    <li><span>Cisco Networking Academy</span><br>IoT Security</li>
+                    <li><span>Cisco Networking Academy</span><br>Big Data & Analytics</li>
+                    <li><span>Cisco Networking Academy</span><br>Hackathon Playbook</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services------>
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">My Technical Experiences</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Connecting Things</h2>
+                <p>I meticulously addressed IoT security challenges, recognizing unique vulnerabilities in interconnected devices. 
+                    This led to thorough threat modeling activities, scrutinizing IoT systems at physical, communication, and application layers. 
+                    Using Kali Linux tools, I actively identified and assessed risks, applying comprehensive frameworks to formulate strategic recommendations for threat mitigation. 
+                    My expertise extends to understanding the dynamic impact of emerging technologies on IoT security, emphasizing the need for continuous adaptation and innovation. 
+                    These experiences position me as a proficient professional in devising and implementing robust security measures within the evolving IoT landscape.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>IoT Security</h2>
+                <p>Embarking on my Cisco educational journey, I immersed myself in IoT security, articulating specific challenges. 
+                    This led to meticulous threat modeling, examining IoT systems at various layers to pinpoint vulnerabilities. 
+                    With Kali Linux tools, I adeptly identified security risks within IoT frameworks. 
+                    Applying threat modeling and risk assessment, I not only identified threats but also recommended robust mitigation measures. 
+                    My exploration extended to understanding the impact of emerging technologies on IoT security, positioning me at the forefront of adapting security measures to evolving threats. 
+                    These experiences fortified my expertise in securing IoT ecosystems effectively.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Big Data & Analytics</h2>
+                <p>During my time at Cisco Networking Academy, I gained insights into the transformative role of data analytics in IoT solutions. 
+                    Recognizing the value it brings, I delved into the intricacies of data analysis, utilizing Python for collecting, preparing, analyzing, and visualizing data. 
+                    Venturing into machine learning, I applied algorithms for meaningful insights from complex datasets. 
+                    Proficiency in data visualization and storytelling facilitated effective communication of results to diverse audiences. 
+                    Exploring data management, I grasped both SQL and No-SQL solutions, and delving into Big Data platforms provided a holistic perspective. 
+                    These experiences enhanced my expertise in leveraging data analytics for informed decision-making in dynamic IoT ecosystems, positioning me as a skilled professional in the field.</p>
+                   <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Portfolio------------> 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.jpg">
+                <div class="layer">
+                    <h3>Smart Garage Monitoring</h3>
+                    <p>Smart Garage Prototype with Node-RED and mySQL Integration </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 2.jpg">
+                <div class="layer">
+                    <h3>IoT Gates Residence</h3>
+                    <p>Implementation of Iot in a Residence gate access </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------contact---------->
+<div id="contact">
+    <div id="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>alfondadims123@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>088292125820</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/alfondadim?igsh=MTRxdmZxNTZucTltaQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Sertifikat.pdf" download class="btn btn2">My Certificate</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Alfonda.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks  = document.getElementsByClassName("tab-links")
+    var tabcontents  = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwyvQ4XQiVQEx2P1grYeVBvQ-gCV9cgSSHvClfePLYbltG877K1ZrG2F3u_9s81BCB6Yw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+            })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
